@@ -47,13 +47,7 @@ $Backdrop-background:rgba(64, 63, 61, 0.8);
     line-height: 125%;
 }
 
-.About-text{
-    @include heading-2();
-    color: $Dark-color;
-    i{
-        color: $Accent-color;
-    }
-}
+
 *{
     box-sizing: border-box;
     list-style: none;
@@ -110,6 +104,7 @@ body{
     background-image:url(img/img-hero.png);
     height: 644px;
     padding: 100px;
+    margin-bottom: 100px;
 
     .text_contain{
         width: 530px;
@@ -140,5 +135,90 @@ body{
             text-decoration: underline;
             
         }
+    }
+}
+
+// Slider section
+.Favourites-coffe{
+    height: 799px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    h2{
+        @include heading-2();
+        color: $Dark-color;
+    }
+    .Favourite-coffe__slider{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1360px;
+        height: 684px;
+        .card{
+            width: 480px;
+            height: 640px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card_title{
+                @include heading-3();
+                color: $Dark-color;
+            }
+            .card_description{
+                @include medium-text();
+                color: $Dark-color;
+            }
+            .card_price{
+                @include heading-3();
+                color: $Dark-color;
+            }
+
+        }
+    }
+}
+
+
+
+//About section
+.About{
+    height: 1325px;
+    width: 1440px;
+    .img-box{
+        width: 1360px;
+        height: 1060px;
+        display: flex;
+        :first-child{
+            margin-bottom: 40px;
+        }
+        
+        .column{
+            margin-right: 40px;
+        
+        }
+        .column-left{
+            margin-right: 40px;
+        }
+        
+        
+        .big-img{
+            width: 660px;
+            height: 590px;
+            border-radius: 20px;
+        }
+        .small-img{
+            width: 660px;
+            height: 430px;
+            border-radius: 20px;
+        }
+    }
+}
+
+.About-text{
+    @include heading-2();
+    color: $Dark-color;
+    margin-bottom: 40px;
+    i{
+        color: $Accent-color;
     }
 }

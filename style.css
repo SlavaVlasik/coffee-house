@@ -1,13 +1,3 @@
-.About-text {
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 125%;
-  color: rgb(64, 63, 61);
-}
-.About-text i {
-  color: rgb(176, 144, 122);
-}
-
 * {
   box-sizing: border-box;
   list-style: none;
@@ -63,6 +53,7 @@ body {
   background-image: url(img/img-hero.png);
   height: 644px;
   padding: 100px;
+  margin-bottom: 100px;
 }
 .enjoy .text_contain {
   width: 530px;
@@ -97,4 +88,90 @@ body {
 }
 .enjoy .text_contain .menu_button:hover {
   text-decoration: underline;
+}
+
+.Favourites-coffe {
+  height: 799px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.Favourites-coffe h2 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+  color: rgb(64, 63, 61);
+}
+.Favourites-coffe .Favourite-coffe__slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1360px;
+  height: 684px;
+}
+.Favourites-coffe .Favourite-coffe__slider .card {
+  width: 480px;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Favourites-coffe .Favourite-coffe__slider .card .card_title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+  color: rgb(64, 63, 61);
+}
+.Favourites-coffe .Favourite-coffe__slider .card .card_description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: rgb(64, 63, 61);
+}
+.Favourites-coffe .Favourite-coffe__slider .card .card_price {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+  color: rgb(64, 63, 61);
+}
+
+.About {
+  height: 1325px;
+  width: 1440px;
+}
+.About .img-box {
+  width: 1360px;
+  height: 1060px;
+  display: flex;
+}
+.About .img-box :first-child {
+  margin-bottom: 40px;
+}
+.About .img-box .column {
+  margin-right: 40px;
+}
+.About .img-box .column-left {
+  margin-right: 40px;
+}
+.About .img-box .big-img {
+  width: 660px;
+  height: 590px;
+  border-radius: 20px;
+}
+.About .img-box .small-img {
+  width: 660px;
+  height: 430px;
+  border-radius: 20px;
+}
+
+.About-text {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+  color: rgb(64, 63, 61);
+  margin-bottom: 40px;
+}
+.About-text i {
+  color: rgb(176, 144, 122);
 }/*# sourceMappingURL=style.css.map */
