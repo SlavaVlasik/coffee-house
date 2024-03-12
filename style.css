@@ -6,4 +6,95 @@
 }
 .About-text i {
   color: rgb(176, 144, 122);
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: rgb(225, 212, 201);
+}
+
+.container {
+  width: 1360px;
+  margin: 0 auto;
+}
+
+.accent {
+  color: rgb(176, 144, 122);
+}
+
+.header {
+  width: 1440px;
+  height: 60px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.header .header-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1168px;
+}
+.header .header-list a {
+  text-decoration: none;
+  color: rgb(64, 63, 61);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.header .header-list li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.enjoy {
+  border-radius: 40px;
+  background-image: url(img/img-hero.png);
+  height: 644px;
+  padding: 100px;
+}
+.enjoy .text_contain {
+  width: 530px;
+  height: 444px;
+}
+.enjoy .text_contain .heading1 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 105%;
+  color: rgb(225, 212, 201);
+}
+.enjoy .text_contain .enjoy-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: rgb(225, 212, 201);
+}
+.enjoy .text_contain .menu_button {
+  width: 200px;
+  height: 64px;
+  border-radius: 100px;
+  background-color: rgb(225, 212, 201);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enjoy .text_contain .menu_button a {
+  color: rgb(64, 63, 61);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.enjoy .text_contain .menu_button:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
