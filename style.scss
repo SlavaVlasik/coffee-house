@@ -183,7 +183,8 @@ body{
 //About section
 .About{
     height: 1325px;
-    width: 1440px;
+    width: 1360px;
+    margin-bottom: 100px;
     .img-box{
         width: 1360px;
         height: 1060px;
@@ -205,11 +206,13 @@ body{
             width: 660px;
             height: 590px;
             border-radius: 20px;
+            object-fit: cover;
         }
         .small-img{
             width: 660px;
             height: 430px;
             border-radius: 20px;
+            object-fit: cover;
         }
     }
 }
@@ -218,7 +221,59 @@ body{
     @include heading-2();
     color: $Dark-color;
     margin-bottom: 40px;
+    
+    width: 1360px;
+    height: 225px;
+    
     i{
         color: $Accent-color;
+    }
+}
+
+
+//Mobile-app
+
+.Mobile-app{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .Mobile-app__description{
+        width: 630px;
+        height: 342px;
+        .Mobile-app__Title{
+            @include heading-2();
+            color: $Dark-color;
+        }
+        .Mobile-app__text{
+            @include medium-text();
+            color: $Dark-color;
+        }
+        .Mobile-app__buttons{
+            width: 420px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .Mobile-app__link{
+                width: 200px;
+                border-radius: 100px;
+                display: flex;
+                align-items: center;
+                background-color: $Body-background;
+                .button__text{
+                    
+                    width: 78px;
+                    height: 40px;
+                }
+                .button__description{
+                    @include caption-text();
+                    color: $Dark-color;
+                }
+                .store{
+                    @include link-text();
+                    color: $Dark-color;
+                }
+            }
+        }
     }
 }

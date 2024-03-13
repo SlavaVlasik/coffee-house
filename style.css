@@ -138,7 +138,8 @@ body {
 
 .About {
   height: 1325px;
-  width: 1440px;
+  width: 1360px;
+  margin-bottom: 100px;
 }
 .About .img-box {
   width: 1360px;
@@ -158,11 +159,15 @@ body {
   width: 660px;
   height: 590px;
   border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .About .img-box .small-img {
   width: 660px;
   height: 430px;
   border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .About-text {
@@ -171,7 +176,61 @@ body {
   line-height: 125%;
   color: rgb(64, 63, 61);
   margin-bottom: 40px;
+  width: 1360px;
+  height: 225px;
 }
 .About-text i {
   color: rgb(176, 144, 122);
+}
+
+.Mobile-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Mobile-app .Mobile-app__description {
+  width: 630px;
+  height: 342px;
+}
+.Mobile-app .Mobile-app__description .Mobile-app__Title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+  color: rgb(64, 63, 61);
+}
+.Mobile-app .Mobile-app__description .Mobile-app__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: rgb(64, 63, 61);
+}
+.Mobile-app .Mobile-app__description .Mobile-app__buttons {
+  width: 420px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__link {
+  width: 200px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(225, 212, 201);
+}
+.Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__link .button__text {
+  width: 78px;
+  height: 40px;
+}
+.Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__link .button__description {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+  color: rgb(64, 63, 61);
+}
+.Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__link .store {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+  color: rgb(64, 63, 61);
 }/*# sourceMappingURL=style.css.map */
