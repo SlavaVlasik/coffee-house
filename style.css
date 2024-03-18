@@ -4,6 +4,8 @@
   text-decoration: none;
   max-width: 100%;
   max-height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: "Inter", sans-serif;
 }
 
@@ -178,6 +180,7 @@ body {
   margin-bottom: 40px;
   width: 1360px;
   height: 225px;
+  overflow: hidden;
 }
 .About-text i {
   color: rgb(176, 144, 122);
@@ -197,12 +200,14 @@ body {
   font-weight: 600;
   line-height: 125%;
   color: rgb(64, 63, 61);
+  margin-bottom: 40px;
 }
 .Mobile-app .Mobile-app__description .Mobile-app__text {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   color: rgb(64, 63, 61);
+  margin-bottom: 40px;
 }
 .Mobile-app .Mobile-app__description .Mobile-app__buttons {
   width: 420px;
@@ -211,26 +216,31 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__link {
+.Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__button {
   width: 200px;
+  height: 64px;
   border-radius: 100px;
   display: flex;
   align-items: center;
+  padding: 12px 20px;
   background-color: rgb(225, 212, 201);
 }
-.Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__link .button__text {
+.Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__button .button__text {
   width: 78px;
   height: 40px;
+  margin-left: 8px;
 }
-.Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__link .button__description {
+.Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__button .button__description {
   font-size: 10px;
   font-weight: 600;
   line-height: 140%;
   color: rgb(64, 63, 61);
+  margin-bottom: 2px;
 }
-.Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__link .store {
+.Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__button .store {
   font-size: 16px;
   font-weight: 600;
   line-height: 125%;
   color: rgb(64, 63, 61);
+  white-space: nowrap;
 }/*# sourceMappingURL=style.css.map */
