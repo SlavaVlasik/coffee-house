@@ -35,7 +35,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1168px;
+  width: 1360px; /* Изменил ширину на 1360px */
 }
 .header .header-list a {
   text-decoration: none;
@@ -175,9 +175,13 @@ body {
   font-weight: 600;
   line-height: 125%;
   color: rgb(64, 63, 61);
-  margin-bottom: 40px;
+  width: 100%;
   width: 1360px;
-  height: 225px;
+  height: auto;
+  display: inline-block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 40px;
 }
 .About-text i {
   color: rgb(176, 144, 122);
@@ -233,4 +237,4 @@ body {
   font-weight: 600;
   line-height: 125%;
   color: rgb(64, 63, 61);
-}/*# sourceMappingURL=style.css.map */
+}
