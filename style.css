@@ -25,37 +25,56 @@ body {
   color: rgb(176, 144, 122);
 }
 
-.header {
-  width: 1440px;
+.wrapper {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
   height: 60px;
-  margin: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
 }
-.header .header-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1168px;
+
+.main-logo {
+  margin-right: auto;
 }
-.header .header-list a {
-  text-decoration: none;
-  color: rgb(64, 63, 61);
+
+.navigation {
+  width: 1188px;
+  height: 26px;
   font-size: 16px;
   font-weight: 600;
-  line-height: 125%;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
 }
-.header .header-list li:not(:last-child) {
+.navigation .navigation__item:not(:last-child) {
   margin-right: 40px;
 }
-.header .header__menu {
-  text-decoration: none;
+.navigation .navigation__link {
   color: rgb(64, 63, 61);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 72px;
+  height: 28px;
+  justify-content: space-between;
+}
+.menu .menu__logo {
+  width: 20px;
+  height: 20px;
+  align-self: flex-start;
+}
+.menu .menu__link {
   font-size: 16px;
   font-weight: 600;
-  line-height: 125%;
+  line-height: 150%;
+  color: rgb(64, 63, 61);
 }
 
 .enjoy {
@@ -99,7 +118,7 @@ body {
   color: rgb(64, 63, 61);
   font-size: 16px;
   font-weight: 600;
-  line-height: 125%;
+  line-height: 150%;
 }
 .enjoy .text_contain .menu_button:hover {
   text-decoration: underline;
@@ -254,7 +273,7 @@ body {
 .Mobile-app .Mobile-app__description .Mobile-app__buttons .Mobile-app__button .store {
   font-size: 16px;
   font-weight: 600;
-  line-height: 125%;
+  line-height: 150%;
   color: rgb(64, 63, 61);
   white-space: nowrap;
 }
@@ -326,6 +345,6 @@ body {
 .footer .footer__contact-container .footer__contacts .footer__contact p {
   font-size: 16px;
   font-weight: 600;
-  line-height: 125%;
+  line-height: 150%;
   color: rgb(225, 212, 201);
 }/*# sourceMappingURL=style.css.map */

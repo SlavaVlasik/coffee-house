@@ -44,7 +44,7 @@ $Backdrop-background:rgba(64, 63, 61, 0.8);
 @mixin link-text(){
     font-size: 16px;
     font-weight: 600;
-    line-height: 125%;
+    line-height: 150%;
 }
 
 
@@ -71,39 +71,55 @@ body{
 .accent{
     color: $Accent-color;
 }
+.wrapper{
+    max-width: 1360px;
+    margin: 0 auto;
+}
 
 //Шапка
-.header{
-    width: 1440px;
-    height: 60px;
-    margin: 20px 0;
+.header_wrapper{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-
-    .header-list{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 1168px;
-        a{
-            text-decoration: none;
-            color: $Dark-color;
-            @include link-text();
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height:60px;
+}
+.main-logo{
+    margin-right: auto;
+}
+.navigation{
+    width: 1188px;
+    height: 26px;
+    @include link-text();
+    display: flex;
+    justify-content: center;
+    .navigation__item{
+        &:not(:last-child){
+            margin-right: 40px;
         }
-        li:not(:last-child){
-            margin-right:40px;
-        }
-       
     }
-    .header__menu{
-        text-decoration: none;
+    .navigation__link{
         color: $Dark-color;
-        @include link-text();
     }
 }
 
+.menu{
+    display: flex;
+    align-items: center;
+    width: 72px;
+    height: 28px;
+    
+    justify-content: space-between;
+    .menu__logo{
+        width: 20px;
+        height: 20px;
+        align-self: flex-start
+    }
+    .menu__link{
+        @include link-text();
+        color: $Dark-color;
+    }
+}
 
 
 //Enjoy секция
