@@ -191,6 +191,7 @@ body{
         width: 1360px;
         height: 1060px;
         display: flex;
+        
         :first-child{
             margin-bottom: 40px;
         }
@@ -302,6 +303,8 @@ body{
     height: 450px;
     border-radius: 40px;
     padding: 100px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: $Container-background;
     display: flex;
     align-items: center;
