@@ -57,6 +57,7 @@ $Backdrop-background:rgba(64, 63, 61, 0.8);
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     width: 1440px;
@@ -96,6 +97,11 @@ body{
         }
        
     }
+    .header__menu{
+        text-decoration: none;
+        color: $Dark-color;
+        @include link-text();
+    }
 }
 
 
@@ -104,6 +110,7 @@ body{
 .enjoy{
     border-radius: 40px;
     background-image:url(img/img-hero.png);
+    object-fit: contain;
     height: 644px;
     padding: 100px;
     margin-bottom: 100px;
@@ -115,10 +122,13 @@ body{
         .heading1{
             @include heading-1();
             color: $Light-color;
+            margin-top: 0;
+            margin-bottom: 40px;
         }
         .enjoy-description{
             @include medium-text();
             color: $Light-color;
+            margin-bottom: 40px;
         }
         .menu_button{
             width: 200px;
