@@ -11,9 +11,11 @@ $Backdrop-background:rgba(64, 63, 61, 0.8);
 }
 @mixin heading-1-accent(){
     font-size: 72px;
-    font-style: italic;
     font-weight: 600;
     line-height: 105%;
+    font-family: "Inter", sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    font-style: italic;
 }
 @mixin heading-2(){
     font-size: 60px;
@@ -56,7 +58,7 @@ $Backdrop-background:rgba(64, 63, 61, 0.8);
     max-height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
+    font-family: Inter, sans-serif;
     scroll-behavior: smooth;
 }
 body{
@@ -126,7 +128,8 @@ body{
 .enjoy{
     border-radius: 40px;
     background-image:url(img/img-hero.png);
-    object-fit: contain;
+    background-position: center;
+    object-fit: cover;
     height: 644px;
     padding: 100px;
     margin-bottom: 100px;
@@ -140,6 +143,11 @@ body{
             color: $Light-color;
             margin-top: 0;
             margin-bottom: 40px;
+           span{
+            @include heading-1-accent();
+            color: $Accent-color;
+            @include heading-1-accent();
+           }
         }
         .enjoy-description{
             @include medium-text();
@@ -183,12 +191,19 @@ body{
         justify-content: space-between;
         width: 1360px;
         height: 684px;
+        position: relative;
+        
         .card{
+            position: absolute;
             width: 480px;
             height: 640px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-evenly;
+            left: 450px;
+            top:60px;
+            opacity: 0;
             .card_title{
                 @include heading-3();
                 color: $Dark-color;
@@ -203,6 +218,24 @@ body{
             }
 
         }
+        .active{
+            opacity: 1;
+        }
+    }
+    .prev{
+        background-image: url(/img/button-icon-dark.png);
+        background-size: contain;
+        width: 60px;
+        border: none;
+        background-color: $Body-background;
+        height: 60px;
+    }
+    .next{
+     background-image: url(/img/next__button.png);
+        width: 60px;
+        border: none;
+        background-color: $Body-background;
+        height: 60px;
     }
 }
 

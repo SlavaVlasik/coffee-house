@@ -6,7 +6,7 @@
   max-height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -80,8 +80,9 @@ body {
 .enjoy {
   border-radius: 40px;
   background-image: url(img/img-hero.png);
-  -o-object-fit: contain;
-     object-fit: contain;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 644px;
   padding: 100px;
   margin-bottom: 100px;
@@ -97,6 +98,21 @@ body {
   color: rgb(225, 212, 201);
   margin-top: 0;
   margin-bottom: 40px;
+}
+.enjoy .text_contain .heading1 span {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 105%;
+  font-family: "Inter", sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+  font-style: italic;
+  color: rgb(176, 144, 122);
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 105%;
+  font-family: "Inter", sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+  font-style: italic;
 }
 .enjoy .text_contain .enjoy-description {
   font-size: 16px;
@@ -143,13 +159,19 @@ body {
   justify-content: space-between;
   width: 1360px;
   height: 684px;
+  position: relative;
 }
 .Favourites-coffe .Favourite-coffe__slider .card {
+  position: absolute;
   width: 480px;
   height: 640px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  left: 450px;
+  top: 60px;
+  opacity: 0;
 }
 .Favourites-coffe .Favourite-coffe__slider .card .card_title {
   font-size: 24px;
@@ -168,6 +190,24 @@ body {
   font-weight: 600;
   line-height: 125%;
   color: rgb(64, 63, 61);
+}
+.Favourites-coffe .Favourite-coffe__slider .active {
+  opacity: 1;
+}
+.Favourites-coffe .prev {
+  background-image: url(/img/button-icon-dark.png);
+  background-size: contain;
+  width: 60px;
+  border: none;
+  background-color: rgb(225, 212, 201);
+  height: 60px;
+}
+.Favourites-coffe .next {
+  background-image: url(/img/next__button.png);
+  width: 60px;
+  border: none;
+  background-color: rgb(225, 212, 201);
+  height: 60px;
 }
 
 .About {
